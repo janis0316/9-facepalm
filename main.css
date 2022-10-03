@@ -1,29 +1,74 @@
-header a {
+.body {
+    background-image: url('./images/background.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    display: inline-block;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 150px;
+}
+.image {
+    width: 150px;
+}
+.div {
+    float: right;
+    margin-top: 60px; 
+}
+.link-one {
+    margin-left: 500px;
     color: white;
     text-decoration: none;
     margin-right: 60px;
     font-weight: bold;
     font-size: 20px;
 }
-footer a {
-    margin-right: 15px;
+.link {
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-weight: bold;
+    font-size: 20px;
 }
-
-
-header {
-    background: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 150px;
-}
-
-main {
+.main {
     color: white;
     text-align: center;
     margin-top: 220px;
 }
-footer {
+.error {
+    font-size: 170px; 
+}
+.description {
+    font-size: 17px;
+    margin-bottom: 220px;
+}
+.home {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer {
+    display: inline-block;
     background: rgba(0, 0, 0, .7);
     width: 100%;
     height: 100px;
-    
+}
+.div-footer {
+    margin-top: 40px;
+    width: 70%;
+    float: left;
+}
+.footer-link {
+    margin-left: 200px;
+    margin-right: 15px;
+}
+.footer-links {
+    margin-right: 15px;
+}
+.brand {
+    margin-top: 40px;
+    color: white;
+    width: 30%;
+    float: right;
+    float: right;
 }
