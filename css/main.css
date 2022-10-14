@@ -1,28 +1,30 @@
 .body {
-    background-image: url('./images/background.jpg');
+    background-image: url('../images/background.jpg');
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
 }
+
 .header {
     display: inline-block;
     background: rgba(0, 0, 0, .7);
     width: 100%;
     height: 150px;
 }
+
 .image {
     width: 150px;
 }
+
 .div {
     float: right;
     margin-top: 60px; 
 }
-.link-one {
-    margin-left: 500px;
-    color: white;
-    text-decoration: none;
-    margin-right: 60px;
-    font-weight: bold;
-    font-size: 20px;
-}
+
 .link {
     color: white;
     text-decoration: none;
@@ -30,6 +32,11 @@
     font-weight: bold;
     font-size: 20px;
 }
+
+    .link:hover {
+        text-decoration: underline;
+}
+
 .main {
     color: white;
     text-align: center;
@@ -38,35 +45,64 @@
 .error {
     font-size: 170px; 
 }
+
 .description {
     font-size: 17px;
     margin-bottom: 220px;
 }
+
 .home {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
+
+.home:hover {
+    text-decoration: underline;
+}
+
 .footer {
-    display: inline-block;
+    display: flex;
+    flex-wrap: initial;
+    padding-top: 40px;
     background: rgba(0, 0, 0, .7);
     width: 100%;
-    height: 100px;
+    height: 70px;
+    
 }
-.div-footer {
-    margin-top: 40px;
+
+.footer > .div-footer { 
+    display: flex;
     width: 70%;
-    float: left;
+    gap: 30px;
+    margin-left: 100px;
 }
-.footer-link {
-    margin-left: 200px;
-    margin-right: 15px;
+
+.div-footer > .icon {
+    justify-content: flex-start;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.5s;
 }
-.footer-links {
-    margin-right: 15px;
+
+.fa{
+    font-size: 50px;
 }
+.icon:hover { 
+    color: black;
+    background-color: white;
+
+
+}    
+
 .brand {
-    margin-top: 40px;
+    flex-direction: column;
     color: white;
     width: 30%;
     float: right;
